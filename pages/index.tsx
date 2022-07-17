@@ -2,27 +2,34 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex justify-center w-full h-screen place-items-start">
-      <h1 className="text-3xl text-center ">Schaden Meldung Formular</h1>
-      <div className="grid grid-cols-1 mt-10">
-        <span className="text-2xl"> Unternehmen :</span>
-        <input
-          className="m-2 border-2"
-          type="text"
-          placeholder="geben sie der Unternehmensname ein"
-        />
-        <span className="text-2xl"> Datum :</span>
-        <input
-          className="m-2 border-2"
-          type="text"
-          placeholder="geben sie das Datum ein"
-        />
-        <span className="text-2xl"> Dachwerbeschild :</span>
-        <input
-          className="m-2 border-2"
-          type="text"
-          placeholder="geben sie die Seriennummer ein"
-        />
+    <div className="flex justify-center items-center h-screen bg-slate-200">
+      <div className="block bg-slate-50 p-6 rounded-xl shadow-md  shadow-slate-300 w-[90]">
+        <form action="">
+          <h2 className="text-[#ff6a39] text-justify text-3xl font-semibold my-4">
+            Schaden Formular
+          </h2>
+
+          <label className="text-sm">Unternehmen</label>
+          <input
+            type="emial"
+            name=""
+            id="email"
+            className="h-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm"
+          />
+          <label className="text-sm">Email</label>
+          <input
+            type="emial"
+            name=""
+            id="email"
+            className="h-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm"
+          />
+          <input
+            type="submit"
+            name=""
+            id="signUp"
+            className="bg-[#ff7b27] w-full h-10 cursor-pointer text-white rounded-md nav-item text-sm"
+          />
+        </form>
       </div>
     </div>
   );
