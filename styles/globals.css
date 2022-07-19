@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-item::before {
-  background: rgb(35 24 197);
-  background-image: initial;
-  background-position-x: initial;
-  background-position-y: initial;
-  background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: rgb(35, 24, 197);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
